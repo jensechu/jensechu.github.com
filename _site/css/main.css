@@ -1,5 +1,9 @@
-/* Main Logo */
+@font-face {
+    font-family: LeagueScript;
+    src: url('/media/fonts/LeagueScriptNumberOne.ttf');
+}    
 
+/* Main Logo */
 .logo {
     background-color: #000;
     height: 150px;
@@ -10,10 +14,11 @@
 }
 
 .logo-text {
-    padding: 65px 0px 0px 20px;
-    font-size: 30pt;
+    padding: 60px 0px 0px 20px;
+    font: 25pt LeagueScript;
     color: #fff;   
     width: 100px;
+    font-family: 
 }
 
 .logo-text-pink {
@@ -24,8 +29,8 @@
 #sidebar {
     position: fixed;
     height: 100%;
-    z-index: -1;
-    background: url('/images/jensen.png') no-repeat bottom center;
+    min-width: 200px;
+
 }
 
 #navigation {
@@ -34,8 +39,8 @@
 
 #navigation li {
     text-align: center;
-    font-size: 15pt;
-    line-height: 27px;
+    font-size: 10pt;
+    line-height: 17px;
 }
 
 #heart-bar {
@@ -43,7 +48,7 @@
 }
 
 #heart-bar li {
-    line-height: 45px;
+    line-height: 600%;
 }
 
 /* Main Content */
@@ -52,4 +57,13 @@
     margin-left: 20%;
     background-color: white;
     padding-left: 75px;
+}
+
+#content h1 {
+    font-family: Arvo; /* Rokkitt */
+}
+
+/* Posts */
+div.post {
+
 }
