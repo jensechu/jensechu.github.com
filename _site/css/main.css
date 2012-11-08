@@ -1,0 +1,20 @@
+.logo {
+    background-color: #000;
+    height: 150px;
+    -moz-border-radius:75px;
+    -webkit-border-radius: 75px;
+    width: 150px;
+    margin-top: 25px;
+}
+
+.logo-text {
+    padding: 80px 0px 0px 30px;
+    font-size: 20pt;
+    color: #fff;   
+    width: 100px;
+}
+
+.logo-text-pink {
+    color: pink;
+
+}

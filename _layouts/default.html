@@ -6,6 +6,7 @@
     <meta name="keywords" content="code, python, hoops, hula hoops, cats">
 
     <link href="/js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
 
     <script src="/js/bootstrap/js/bootstrap.min.js"></script>
   </head>
@@ -14,14 +15,16 @@
       <div class="row-fluid">
 
 	<div class="span2">
-	  <h1>Sidebar</h1>
+	  <div class="logo">
+	    <div class="logo-text">jensen<span class="logo-text-pink">h</span></div>
+	  </div>
 	</div>
 	
 	<div class="span10">
 	  {% if paginator.posts %}
 
 	     {% for post in paginator.posts %}
-                {{ post.title }}
+                <h1>{{ post.title }}</h1>
                 <p>{{ post.content }}</p>
 	     {% endfor %}
 	  
