@@ -16,7 +16,7 @@
 
 	<div class="span2" id="sidebar">
 	  <div class="logo">
-	    <div class="logo-text">jensen<span class="logo-text-pink">h</span></div>
+	    <div class="logo-text">jensen<span class="logo-text-pink"></span></div>
 	  </div>
 	  <div id="navigation">
 	    <ul class="nav">
@@ -25,6 +25,15 @@
 	      <li><a href="/archives">archive</a></li>
 	      <li><a href="/contact">contact</a></li>
 	    </ul>
+	  </div>
+	  <div id="heart-bar">
+	    {% if paginator.posts %}
+	        <ul>
+		  {% for post in paginator.posts %}
+		  <li>&nbsp;</li>
+		  {% endfor %}
+		</ul>
+	    {% endif %}
 	  </div>
 	</div>
 	

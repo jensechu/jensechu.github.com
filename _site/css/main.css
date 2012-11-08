@@ -6,12 +6,12 @@
     -moz-border-radius:75px;
     -webkit-border-radius: 75px;
     width: 150px;
-    margin: 25px 0px 0px 50px;
+    margin: 25px 0px 0px 37px;
 }
 
 .logo-text {
-    padding: 75px 0px 0px 20px;
-    font-size: 20pt;
+    padding: 65px 0px 0px 20px;
+    font-size: 30pt;
     color: #fff;   
     width: 100px;
 }
@@ -25,16 +25,25 @@
     position: fixed;
     height: 100%;
     z-index: -1;
+    background: url('/images/jensen.png') no-repeat bottom center;
 }
 
 #navigation {
-    margin: 50px 0px 50px 50px;
+    margin: 50px 0px 50px 17px;
 }
 
 #navigation li {
     text-align: center;
     font-size: 15pt;
     line-height: 27px;
+}
+
+#heart-bar {
+    margin-left: 103px;
+}
+
+#heart-bar li {
+    line-height: 45px;
 }
 
 /* Main Content */
