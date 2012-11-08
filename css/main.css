@@ -10,14 +10,14 @@
 }
 
 .logo-text {
-    padding: 80px 0px 0px 30px;
+    padding: 75px 0px 0px 20px;
     font-size: 20pt;
     color: #fff;   
     width: 100px;
 }
 
 .logo-text-pink {
-    color: pink;
+    color: #ff6ab2;
 }
 
 /* Sidebar */
@@ -27,6 +27,15 @@
     z-index: -1;
 }
 
+#navigation {
+    margin: 50px 0px 50px 50px;
+}
+
+#navigation li {
+    text-align: center;
+    font-size: 15pt;
+    line-height: 27px;
+}
 
 /* Main Content */
 #content {
