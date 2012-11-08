@@ -1,10 +1,12 @@
+/* Main Logo */
+
 .logo {
     background-color: #000;
     height: 150px;
     -moz-border-radius:75px;
     -webkit-border-radius: 75px;
     width: 150px;
-    margin-top: 25px;
+    margin: 25px 0px 0px 50px;
 }
 
 .logo-text {
@@ -16,5 +18,20 @@
 
 .logo-text-pink {
     color: pink;
+}
 
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    height: 100%;
+    z-index: -1;
+}
+
+
+/* Main Content */
+#content {
+    border-left: 1px solid #D9DBDB;
+    margin-left: 20%;
+    background-color: white;
+    padding-left: 75px;
 }
