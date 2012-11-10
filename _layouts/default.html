@@ -36,7 +36,15 @@
 
 	     {% for post in paginator.posts %}
 	        <div class="post">
-                  <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+		  <div class="post-header">
+		    <div class="pull-left">
+                      <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a> 
+		    </div>
+		    <div class="pull-right post-info">
+		      <i class="icon-time"></i> {{ post.date | date: "%b %Y" }}
+		      <i class="icon-bookmark"></i> <a href="/archive.html#tab-{{ post.category }}">{{ post.category | upcase }}</a>
+		    </div>
+		  </div>
                   <p>{{ post.content }}</p>
 		</div>
 	     {% endfor %}
