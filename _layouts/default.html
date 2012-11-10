@@ -46,7 +46,9 @@
 		      <i class="icon-bookmark"></i> <a href="/archive.html#tab-{{ post.category }}">{{ post.category | upcase }}</a>
 		    </div>
 		  </div>
-                  <p>{{ post.content }}</p>
+                  <div class="post-content">
+		    {{ post.content }}
+		  </div>
 		</div>
 	     {% endfor %}
 	  
@@ -64,7 +66,9 @@
 		       </div>
 		    {% endif %}
 		  </div>
-		  {{content}}
+                  <div class="post-content">
+		    {{ content }}
+		  </div>
 		</div>
 	  {% endif %}
 	</div>

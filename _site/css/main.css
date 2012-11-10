@@ -78,7 +78,6 @@ a.logo {
 
 #content h1 {
     font-family: Arvo; /* Rokkitt */
-    margin-bottom: 35px;
 }
 
 /* Posts */
@@ -92,6 +91,7 @@ a.logo {
 .post-header h1 {
     position: relative;
     right: 14px;
+    margin-bottom: 35px;
 }
 
 .heart {
