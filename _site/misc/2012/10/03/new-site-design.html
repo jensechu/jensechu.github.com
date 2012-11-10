@@ -9,7 +9,18 @@
     <link href="http://fonts.googleapis.com/css?family=Arvo:400,700|Rokkitt:400,700" rel="stylesheet" type="text/css">
     <link href="/css/main.css" rel="stylesheet" type="text/css">
 
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="/js/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+      $(function(){
+         $('#archiveTabs a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+         });
+      });
+    </script>
+
   </head>
   <body>
     <div class="container-fluid hidden-tablet">
@@ -42,7 +53,7 @@
 		    
 		       <div class="pull-right post-info">
 			 <i class="icon-time"></i> Oct 2012
-			 <i class="icon-bookmark"></i> <a href="/archive.html#tab-web">WEB</a>
+			 <i class="icon-bookmark"></i> <a href="/archive.html#tab-misc">MISC</a>
 		       </div>
 		    
 		  </div>

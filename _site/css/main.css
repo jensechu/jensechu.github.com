@@ -60,15 +60,6 @@ a.logo {
     background: white;
 }
 
-#heart-bar {
-    width: 15px;
-    margin-left: auto; margin-right: auto;
-}
-
-#heart-bar li {
-    line-height: 600%;
-}
-
 /* Main Content */
 #content {
     background-color: white;

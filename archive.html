@@ -1,6 +1,29 @@
 ---
-layout: post
+layout: default
 title: Archive
 ---
+<ul class="nav nav-tabs" id="archiveTabs">
+  <li><a href="#all">ALL</a></li>
+  {% for category in site.categories %}
+     <li><a href="#{{ category[0] }}">{{ category[0] | upcase }}</a></li>
+  {% endfor %}
+</ul>
 
-arhchive herhoeir
+<div class="tab-content">
+  <div class="tab-pane active" id="all">
+    {% for post in site.posts %}
+       <a href="{{ post.url }}">{{ post.title }}</a>
+       <p>{{ post.content | strip_html | truncate, 160 }}</p>
+    {% endfor %}
+  </div>
+  {% for category in site.categories %}
+  <div class="tab-pane" id="{{ category[0] }}">
+    {% for post in category[1] %}
+       <a href="{{ post.url }}">{{ post.title }}</a>
+       <p>{{ post.content | strip_html | truncate, 160 }}</p>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>
+ 
+
