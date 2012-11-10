@@ -42,7 +42,7 @@ a.logo {
     height: 100%;
     min-width: 210px;
     padding: 25px 20px 0px 0px;
-    border-right: 1px solid #D9DBDB;
+    border-right: 1px solid #DDD;/*#D9DBDB;*/
 }
 
 #navigation {
@@ -75,7 +75,7 @@ a.logo {
 .post-header {
     height: 44px;
     min-width: 500px;
-    border-bottom: 1px dotted lightGrey;
+    border-bottom: 1px dotted #DDD;
     margin-bottom: 40px;
 }
 
@@ -101,4 +101,10 @@ a.logo {
 
 div.post {
     margin-top: 80px;
+}
+
+/* Archive Tabs */
+
+.nav-tabs {
+    border-bottom: 1px dotted #DDD;
 }

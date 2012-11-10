@@ -3,7 +3,7 @@ layout: default
 title: Archive
 ---
 <ul class="nav nav-tabs" id="archiveTabs">
-  <li><a href="#all">ALL</a></li>
+  <li class="active"><a href="#all">ALL</a></li>
   {% for category in site.categories %}
      <li><a href="#{{ category[0] }}">{{ category[0] | upcase }}</a></li>
   {% endfor %}
