@@ -57,7 +57,7 @@ a.logo {
 }
 
 .nav > li > a:hover {
-    background: white;
+    color: red;
 }
 
 #heart-bar {
