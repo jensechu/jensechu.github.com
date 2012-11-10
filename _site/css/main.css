@@ -40,7 +40,7 @@ a.logo {
 #sidebar {
     position: fixed;
     height: 100%;
-    min-width: 200px;
+    min-width: 210px;
     padding: 25px 20px 0px 0px;
     border-right: 1px solid #D9DBDB;
 }
@@ -90,6 +90,14 @@ a.logo {
 }
 
 .post-header h1 {
+    position: relative;
+    right: 14px;
+}
+
+.heart {
+    position: relative;
+    right: 72px;
+    top: 20px;
 }
 
 .post-info {
