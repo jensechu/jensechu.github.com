@@ -82,12 +82,14 @@ a.logo {
 }
 
 /* Posts */
-div.post {
-    margin-top: 80px;
+.post-header {
+    height: 44px;
+    min-width: 500px;
+    border-bottom: 1px dotted lightGrey;
+    margin-bottom: 40px;
 }
 
-.post-header {
-    height: 75px;
+.post-header h1 {
 }
 
 .post-info {
@@ -96,4 +98,8 @@ div.post {
 
 .post-info i:nth-child(2){
     margin-left: 25px;
+}
+
+div.post {
+    margin-top: 80px;
 }
