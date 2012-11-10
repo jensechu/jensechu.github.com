@@ -108,3 +108,8 @@ div.post {
 .nav-tabs {
     border-bottom: 1px dotted #DDD;
 }
+
+/* Disqus */
+#disqus_thread {
+    margin-top: 50px;
+}
