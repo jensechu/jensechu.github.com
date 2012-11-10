@@ -65,6 +65,7 @@ a.logo {
     background-color: white;
     margin-left: 250px;
     padding-left: 25px;
+    min-width: 500px;
 }
 
 #content h1 {
