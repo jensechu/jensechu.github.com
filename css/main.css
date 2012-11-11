@@ -112,6 +112,10 @@ img.img-wrap {
     margin: 15px 25px 15px 0px;
 }
 
+ol li {
+    margin-bottom: 25px;
+}
+
 /* Archive Tabs */
 
 .nav-tabs {
