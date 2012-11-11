@@ -11,6 +11,10 @@ a:hover {
     color: #992667;
 }
 
+img.img-margin {
+    margin-left: 12%;
+}
+
 /* Main Logo */
 .logo {
     background-color: #000;
