@@ -1,11 +1,17 @@
 ---
 layout: post
 category: hoops
-title: Understanding Hoop Planes
+title: Spatial Reasoning & Hoops
 color: pink
 ---
 
-To foster a better connection with your hoop it is best to also foster a knack for spatial reasoning. Wikipedia defines spatial reasoning as '... the ability to visualize spatial patterns and mentally manipulate them over a time-ordered sequence of spatial transformations.' Translating that to the hoop world means having awareness of where your hoop is in space, how it got there, and where it can potentially go from there. 
+<h1><small></small></h1>
+To foster a better connection with your hoop it is best to also foster a knack for spatial reasoning. 
+<blockquote><p>'Spatial-temporal reasoning is the ability to visualize spatial patterns and mentally manipulate them over a time-ordered sequence of spatial transformations. This ability is important for generating and conceptualizing solutions to multi-step problems that arise in areas such as architecture, engineering, science, mathematics, art, games, and everyday life.'
+ <small>Someone famous <cite title="Supermind Music">Super Mind Music</cite></small>
+</p></blockquote>
+
+Translating that to the hoop world means having awareness of where your hoop is in space, how it got there, and where it can potentially go from there. 
 
 My current fascination with the spatial reasoning theory is hoops in two dimensional space. I stumbled into the theory after attempting to lean forward with my torso parallel to the ground, and pass the hoop horizontally over my back from one hand to the other. Basically you swing a hoop in one hand over your head, lean forward while keeping the hoop in the horizontal plane, bring the hoop over your back, and switch it to your opposite hand. Since my vision of what goes on behind my back is limited I had to break down the move and visualize each movement. I noticed that my main focus was placed on prohibiting my hoop to leave the horizontal plane to avoid smacking myself in the head while swinging it over my back. 
 
