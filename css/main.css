@@ -104,6 +104,10 @@ div.post {
     margin-top: 71px;
 }
 
+img.img-wrap {
+    margin: 15px 25px 15px 0px;
+}
+
 /* Archive Tabs */
 
 .nav-tabs {
