@@ -2,6 +2,7 @@
 layout: post
 category: hoops
 title: Guide For New Hoopers
+show: public
 ---
 New hoopers- READ IT ALL! Don't skim on your knowledge. 
 

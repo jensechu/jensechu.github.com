@@ -2,7 +2,7 @@
 layout: post
 category: hoops
 title: Spatial Reasoning & Hoops
-color: pink
+show: public
 ---
 
 <h1><small></small></h1>

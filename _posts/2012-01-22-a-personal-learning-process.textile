@@ -2,6 +2,7 @@
 layout: post
 category: hoops
 title: Hooping in the Singularity
+show: public
 ---
 
 <h1><small>A Personal Learning Process</small></h1>

@@ -46,6 +46,7 @@
 	  {% if paginator.posts %}
 
 	     {% for post in paginator.posts %}
+	        {% if post.show == "public" %}
 	        <div class="post">
 		  <div class="post-header">
 		    <a href="#{{ post.id }}"><i class="icon-heart heart pull-left"></i></a>
@@ -61,6 +62,7 @@
 		    {{ post.content }}
 		  </div>
 		</div>
+		{% endif %}
 	     {% endfor %}
 	  
 	  {% else %}

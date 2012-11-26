@@ -1,0 +1,34 @@
+---
+layout: post
+category: tutorial
+title: Web Development Basics
+show: private
+---
+
+<h1><small>Trust Your Technolust</small></h1>
+Hooray! You are taking the first step in learning how to make a useful website on the Internet all by yourself. By the end of the guide you will have a GitHub account with some substance to it. A powerful site with archiving, comments, date stamps, and more. 
+
+This guide is targeted for people who want to build a site from scratch while learning the best practices. It will go over the importance of source control, HTML/CSS, a dash of Javascript, and last but not least Jekyll a Ruby (programming language) framework. A framework is just code that someone already wrote for us that we use to write more code. For example if instead of writing some javascript to play a music file when my page loads, I can use a framework that someone else already wrote and just tell it my music file and it will do it on it's own. If that doesn't make any sense just forget about it. We will cover it later! If you already have some foundation in web development but want to learn how to string it all together effectively then you will benefit from this guide as well. It is NOT for professionals. It's aimed for people who want to feed the part of them that says that making a useful website sounds like a really cool skill to have.
+
+<h1><small>Real Talk</small></h1>
+Before we get down to the fun stuff it is extremely important that you follow a few principles. This tutorial will not work for you unless you follow the structure I specifically laid out to help you grasp certain concepts. 
+
+* Read everything. Do everything.
+	Every single piece of information presented is something you need to know inorder to move on to the next step. You might think that you don't need to add that ONE line of code, or skip the part where you just move a picture to the left instead of the right, but you do. Just do it! 
+
+* Ask questions often.
+	IAMA web developer AMA. Please do not be afraid to ask me something. Post in the comments and talk to your fellow learners to learn from each other. I will be diligently reading every comment and responding as needed! If you want to contact me personally then email me: jensechu@gmail.com.
+
+* This is not a class.
+	Do not feel any pressure during this process. There are no grades. I am not judging you for taking a week to get around to starting the next step, but I do hope you are at least consistent because I want everyone to progress. If you feel the need to spend more time on a particular subject then feel free to take more time and focus on external resources to learn more. If you procrastinate because you get stuck refer to the next two bullets.
+
+* If everything seems overwhelming and scary just keep going. EVERYONE feels this way.
+	Sometimes you will hit a point, maybe even immediately, where you think 'What the heck am I doing? I give up. It is just not worth it.' That feeling is terrible, but it won't build you a site... Patience is essential for learning any new skill! If you get stuck somewhere just tell me. You don't need to have a concise question. I know everyone learns differently so I will be happy to try to explain the content in another way. 
+
+*  Do not copy and paste code unless it says otherwise.
+	Learning the syntax for how code works is important. You need to physically type it out character by character. If you copy and paste my code examples it's basically like downloading a song instead of writing it. You aren't learning anything about playing the instrument, but you do get to see results. There is a time and a place for copy and paste, but I will make sure you know when it is appropriate. 
+
+* I am learning with you!
+	I have never written any sort of teaching material. Everyone learns different so I welcome and encourage ways to help improve your learning experience. My goal is not about having a trendy/edgy/whatever lesson. It is about how many people actually learn from it.
+
+Live by them, learn by them. After the blood, sweat, and tears you will be able to harness the power of the internet! I am proud that you are starting your journey, and I am certain you will be proud once you finish the guide. 
