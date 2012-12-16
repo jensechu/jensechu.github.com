@@ -64,6 +64,22 @@ a.logo {
     background: white;
 }
 
+/* Sidebar Quotes */
+#random-quote {
+    width: 180px;
+    margin-left: auto; margin-right: auto;
+    margin-top: 50px;
+    font-size: 13px;
+}
+
+span.random-quote {
+    font-style: italic;
+}
+
+span.random-author {
+}
+    
+
 /* Main Content */
 #content {
     background-color: white;
@@ -96,6 +112,7 @@ a.logo {
     top: 87px;
 }
 
+/* Post Date/Category */
 .post-info {
     padding-top: 25px;
 }
