@@ -120,6 +120,10 @@ div.post {
     margin-top: 71px;
 }
 
+.post-content {
+  padding-top: 10px;
+}
+
 .post-content p {
   font-size: 14px;
 }
@@ -130,12 +134,6 @@ img.img-wrap {
 
 ol li {
     margin-bottom: 25px;
-}
-
-/* Archive Tabs */
-
-.nav-tabs {
-    border-bottom: 1px dotted #DDD;
 }
 
 /* Disqus */
@@ -151,12 +149,16 @@ ol li {
     max-width: none;
   }
 
+  #random-quote {
+    text-align: center;
+  }
+
   #content {
     padding: 25px;
   }
 
   .post-header {
-    text-align: center;
+    font-size: 75%;
   }
   
   .post .heart {

@@ -7,9 +7,9 @@ show: public
 
 <h1><small></small></h1>
 To foster a better connection with your hoop it is best to also foster a knack for spatial reasoning. 
-<blockquote><p>'Spatial-temporal reasoning is the ability to visualize spatial patterns and mentally manipulate them over a time-ordered sequence of spatial transformations. This ability is important for generating and conceptualizing solutions to multi-step problems that arise in areas such as architecture, engineering, science, mathematics, art, games, and everyday life.'
- <small>Someone on <cite title="Supermind Music">the Internet</cite></small>
-</p></blockquote>
+<blockquote>'Spatial-temporal reasoning is the ability to visualize spatial patterns and mentally manipulate them over a time-ordered sequence of spatial transformations. This ability is important for generating and conceptualizing solutions to multi-step problems that arise in areas such as architecture, engineering, science, mathematics, art, games, and everyday life.'
+ <cite title="Supermind Music">Someone on the Internet</cite>
+</blockquote>
 
 Translating that to the hoop world means having awareness of where your hoop is in space, how it got there, and where it can potentially go from there. 
 
