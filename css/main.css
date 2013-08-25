@@ -110,7 +110,7 @@ span.random-author {
 .heart {
     position: relative;
     right: 62px;
-    top: 87px;
+    top: 100px;
     z-index: 2;
 }
 
@@ -156,9 +156,9 @@ img.img-wrap {
   padding-left: 35px;
 }
 
-li {
+.post-content li {
   font-size: 14px;
-  margin-bottom: 25px;
+  margin-bottom: 15px!important;
 }
 
 /* Disqus */
