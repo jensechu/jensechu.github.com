@@ -152,8 +152,13 @@ img.img-wrap {
     margin: 15px 25px 15px 0px;
 }
 
-ol li {
-    margin-bottom: 25px;
+.post-content ol, .post-content ul {
+  padding-left: 35px;
+}
+
+li {
+  font-size: 14px;
+  margin-bottom: 25px;
 }
 
 /* Disqus */
