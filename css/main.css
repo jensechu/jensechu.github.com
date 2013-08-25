@@ -15,6 +15,10 @@ img.img-margin {
     margin-left: 12%;
 }
 
+body .row:first-child {
+  max-width: none;
+}
+
 /* Main Logo */
 .logo {
     background-color: #000;
@@ -43,7 +47,8 @@ a.logo {
 /* Sidebar */
 #sidebar {
     height: 100%;
-    padding: 25px 20px 0px 0px;
+    width: 215px;
+    padding: 25px 20px 0px 20px;
     border-right: 1px solid #DDD;/*#D9DBDB;*/
     position: fixed;
     z-index: 1;
@@ -83,7 +88,9 @@ span.random-author {
 /* Main Content */
 #content {
     background-color: white;
-    padding-left: 100px;
+    padding-left: 268px;
+    max-width: 1000px;
+    float: left;
 }
 
 #content h1 {
@@ -147,6 +154,8 @@ ol li {
   #sidebar {
     position: static;
     max-width: none;
+    width: 100%;
+    border: 0px;
   }
 
   #random-quote {
