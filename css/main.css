@@ -104,6 +104,7 @@ span.random-author {
 
 .post-header h1 {
     border-bottom: 1px dotted #DDD;
+    margin-bottom: 0;
 }
 
 .heart {
@@ -115,12 +116,24 @@ span.random-author {
 
 /* Post Date/Category */
 .post-info {
-  position: relative;
-  float: right;
+  border-bottom: 1px dotted #DDD;
+  width: 100%!important;
 }
 
-.post-info i:nth-child(2){
-    margin-left: 25px;
+.post-info > div {
+  padding-left: 20px!important;
+  line-height: 35px;
+}
+
+.post-info i {
+  position: relative;
+  top: 2px;
+}
+
+.post-info div:first-child {
+  border-right: 1px dotted #DDD;
+}
+
 }
 
 div.post {
@@ -176,6 +189,10 @@ ol li {
   
   .post-info {
     float: left;
+  }
+
+  .post-info > div {
+    line-height: 20px;
   }
   
   div.post {
