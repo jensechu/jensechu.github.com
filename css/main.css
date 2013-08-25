@@ -81,6 +81,7 @@ span.random-author {
 /* Main Content */
 #content {
     background-color: white;
+    padding-left: 70px;
 }
 
 #content h1 {
@@ -89,27 +90,23 @@ span.random-author {
 
 /* Posts */
 .post-header {
-    height: 44px;
-    min-width: 500px;
-    border-bottom: 1px dotted #DDD;
     margin-bottom: 40px;
 }
 
 .post-header h1 {
-    position: relative;
-    right: 14px;
-    margin-bottom: 35px;
+    border-bottom: 1px dotted #DDD;
 }
 
 .heart {
     position: relative;
-    right: 72px;
+    right: 79px;
     top: 87px;
 }
 
 /* Post Date/Category */
 .post-info {
-    padding-top: 25px;
+  position: relative;
+  float: right;
 }
 
 .post-info i:nth-child(2){
@@ -141,4 +138,12 @@ ol li {
 /* Disqus */
 #disqus_thread {
     margin-top: 50px;
+}
+
+/* Mobile */
+
+@media screen and (min-width: 768px) {
+  #content {
+    padding-leftt: 0px!important;
+  }
 }
