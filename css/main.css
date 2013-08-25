@@ -11,12 +11,12 @@ a:hover, a h1:hover {
     color: #992667!important;
 }
 
-img.img-margin {
-    margin-left: 12%;
-}
-
 body .row:first-child {
   max-width: none;
+}
+
+.centered {
+  text-align: center;
 }
 
 /* Main Logo */
