@@ -3,12 +3,12 @@
     src: url('/media/fonts/LeagueScriptNumberOne.ttf');
 }    
 
-a {
-    color: #E667AF;
+a, a h1 {
+    color: #E667AF!important;
 }
 
-a:hover {
-    color: #992667;
+a:hover, a h1:hover {
+    color: #992667!important;
 }
 
 img.img-margin {
@@ -42,9 +42,7 @@ a.logo {
 
 /* Sidebar */
 #sidebar {
-    position: fixed;
     height: 100%;
-    min-width: 210px; max-width: 210px;
     padding: 25px 20px 0px 0px;
     border-right: 1px solid #DDD;/*#D9DBDB;*/
 }
@@ -54,14 +52,14 @@ a.logo {
     margin-left: auto; margin-right: auto;
 }
 
+#navigation ul {
+  list-style-type: none;
+}
+
 #navigation li {
     text-align: center;
     font-size: 15pt;
     line-height: 25px;
-}
-
-.nav > li > a:hover {
-    background: white;
 }
 
 /* Sidebar Quotes */
@@ -83,9 +81,6 @@ span.random-author {
 /* Main Content */
 #content {
     background-color: white;
-    margin-left: 250px;
-    padding-left: 25px;
-    min-width: 500px;
 }
 
 #content h1 {
@@ -123,6 +118,10 @@ span.random-author {
 
 div.post {
     margin-top: 71px;
+}
+
+.post-content p {
+  font-size: 14px;
 }
 
 img.img-wrap {

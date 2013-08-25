@@ -4,113 +4,102 @@
     <title>fookin prawns</title>
     <meta name="description" content="Jensen Hussey's website about hula hooping, cats, and some computer stuff.">
     <meta name="keywords" content="code, python, hoops, hula hoops, cats">
+    <meta name="viewport" content="width=device-width">
 
-    <link href="/js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Arvo:400,700|Rokkitt:400,700" rel="stylesheet" type="text/css">
     <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/foundation/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="/css/foundation/css/foundation.min.css" rel="stylesheet" type="text/css">
 
     <link rel="shortcut icon" href="/media/images/favicon.ico" />
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="/js/bootstrap/js/bootstrap.min.js"></script>
     <script src="/js/quotes.js"></script>
-
-    <script>
-      $(function(){
-         $('#archiveTabs a').click(function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-         });
-      });
-    </script>
 
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row-fluid">
-
-	<div class="span2" id="sidebar">
-	  <a href="/index.html" class="logo">
-	    <div class="logo">
-	      <div class="logo-text">jensen<span class="logo-text-pink"></span></div>
+    <div class="row">
+	    <div class="large-2 columns" id="sidebar">
+	      <a href="/index.html" class="logo">
+	        <div class="logo">
+	          <div class="logo-text">jensen<span class="logo-text-pink"></span></div>
+	        </div>
+	      </a>
+	      <div id="navigation">
+	        <ul class="nav">
+	          <li><a href="/">home</a></li>
+	          <li><a href="/about.html">about</a></li>
+	          <li><a href="/archive.html">archive</a></li>
+	          <li><a href="http://www.twitter.com/jensechu">@jensechu</a></li>
+	        </ul>
+	      </div>
+	      <div id="random-quote">
+	        <p>"<span class="random-quote"></span>"</p>
+	        <p class="pull-right">-<span class="random-author"></span></p>
+	      </div>
 	    </div>
-	  </a>
-	  <div id="navigation">
-	    <ul class="nav">
-	      <li><a href="/">home</a></li>
-	      <li><a href="/about.html">about</a></li>
-	      <li><a href="/archive.html">archive</a></li>
-	      <li><a href="http://www.twitter.com/jensechu">@jensechu</a></li>
-	    </ul>
-	  </div>
-	  <div id="random-quote">
-	    <p>"<span class="random-quote"></span>"</p>
-	    <p class="pull-right">-<span class="random-author"></span></p>
-	  </div>
-	</div>
 
-	<div class="span8" id="content">
-	  {% if paginator.posts %}
+	    <div class="large-10 columns" id="content">
+	      {% if paginator.posts %}
 
-	     {% for post in paginator.posts %}
-	        {% if post.show == "public" %}
-	        <div class="post">
-		  <div class="post-header">
-		    <a href="#{{ post.id }}"><i class="icon-heart heart pull-left"></i></a>
-		    <div class="pull-left">
-                      <a href="{{ post.url }}" id="{{ post.id }}"><h1>{{ post.title }}</h1></a> 
+	      {% for post in paginator.posts %}
+	      {% if post.show == "public" %}
+	      <div class="post">
+		      <div class="post-header">
+		        <a href="#{{ post.id }}"><i class="icon-heart heart pull-left"></i></a>
+		        <div class="pull-left">
+              <a href="{{ post.url }}" id="{{ post.id }}"><h1>{{ post.title }}</h1></a> 
+		        </div>
+		        <div class="pull-right post-info">
+		          <i class="icon-time"></i> {{ post.date | date: "%b %Y" }}
+		          <i class="icon-bookmark"></i> <a href="/archive.html#tab-{{ post.category }}">{{ post.category | upcase }}</a>
+		        </div>
+		      </div>
+          <div class="post-content">
+		        {{ post.content }}
+		      </div>
 		    </div>
-		    <div class="pull-right post-info">
-		      <i class="icon-time"></i> {{ post.date | date: "%b %Y" }}
-		      <i class="icon-bookmark"></i> <a href="/archive.html#tab-{{ post.category }}">{{ post.category | upcase }}</a>
-		    </div>
-		  </div>
-                  <div class="post-content">
-		    {{ post.content }}
-		  </div>
-		</div>
-		{% endif %}
-	     {% endfor %}
-	  
-	  {% else %}
-		<div class="post">
-		  <div class="post-header">
-		    <a href="#{{ post.id }}"><i class="icon-heart heart pull-left"></i></a>
-		    <div class="pull-left">
-                      <a href="{{ post.url }}" id="{{ post.id }}"><h1>{{ page.title }}</h1></a> 
-		    </div>
-		    {% if page.date %}
-		       <div class="pull-right post-info">
-			 <i class="icon-time"></i> {{ page.date | date: "%b %Y" }}
-			 <i class="icon-bookmark"></i> <a href="/archive.html#tab-{{ page.category }}">{{ page.category | upcase }}</a>
-		       </div>
 		    {% endif %}
-		  </div>
-                  <div class="post-content">
-		    {{ content }}
-		  </div>
-		  {% if page.date %}
-		  <div id="disqus_thread"></div>
-		  <script type="text/javascript">
-		    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-		    var disqus_shortname = 'prawnme'; // required: replace example with your forum shortname
-		    
-		    /* * * DON'T EDIT BELOW THIS LINE * * */
-		    (function() {
-                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-		    })();
-		  </script>
-		  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-		  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-		  
-		</div>
-		{% endif %}
-	  {% endif %}
-	</div>
+	      {% endfor %}
+	      
+	      {% else %}
+		    <div class="post">
+		      <div class="post-header">
+		        <a href="#{{ post.id }}"><i class="icon-heart heart pull-left"></i></a>
+		        <div class="pull-left">
+              <a href="{{ post.url }}" id="{{ post.id }}"><h1>{{ page.title }}</h1></a> 
+		        </div>
+		        {% if page.date %}
+		        <div class="pull-right post-info">
+			        <i class="icon-time"></i> {{ page.date | date: "%b %Y" }}
+			        <i class="icon-bookmark"></i> <a href="/archive.html#tab-{{ page.category }}">{{ page.category | upcase }}</a>
+		        </div>
+		        {% endif %}
+		      </div>
+          <div class="post-content">
+		        {{ content }}
+		      </div>
+		      {% if page.date %}
+		      <div id="disqus_thread"></div>
+		      <script type="text/javascript">
+		        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		        var disqus_shortname = 'prawnme'; // required: replace example with your forum shortname
+		        
+		        /* * * DON'T EDIT BELOW THIS LINE * * */
+		        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		        })();
+		      </script>
+		      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		      
+		    </div>
+		    {% endif %}
+	      {% endif %}
+	    </div>
 
-      </div>
     </div>
   </body>
 </html>
