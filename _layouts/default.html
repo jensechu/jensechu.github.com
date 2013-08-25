@@ -45,21 +45,25 @@
 
 	      {% for post in paginator.posts %}
 	      {% if post.show == "public" %}
-	      <div class="post">
-		      <div class="post-header">
-		        <a href="#{{ post.id }}" class="heart"><i class="foundicon-heart"></i></a>
-		        <div class="pull-left">
-              <a href="{{ post.url }}" id="{{ post.id }}"><h1>{{ post.title }}</h1></a> 
+        <div class="row">
+          <div class="large-12 columns">
+	          <div class="post">
+		          <div class="post-header">
+		            <a href="#{{ post.id }}" class="heart"><i class="foundicon-heart"></i></a>
+		            <div class="pull-left">
+                  <a href="{{ post.url }}" id="{{ post.id }}"><h1>{{ post.title }}</h1></a> 
+		            </div>
+		            <div class="pull-right post-info">
+		              <i class="foundicon-clock"></i> {{ post.date | date: "%b %Y" }}
+		              <i class="foundicon-star"></i> <a href="/archive.html#tab-{{ post.category }}">{{ post.category | upcase }}</a>
+		            </div>
+		          </div>
+              <div class="post-content">
+		            {{ post.content }}
+		          </div>
 		        </div>
-		        <div class="pull-right post-info">
-		          <i class="foundicon-clock"></i> {{ post.date | date: "%b %Y" }}
-		          <i class="foundicon-star"></i> <a href="/archive.html#tab-{{ post.category }}">{{ post.category | upcase }}</a>
-		        </div>
-		      </div>
-          <div class="post-content">
-		        {{ post.content }}
-		      </div>
-		    </div>
+          </div>
+        </div>
 		    {% endif %}
 	      {% endfor %}
 	      
