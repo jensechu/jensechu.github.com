@@ -176,4 +176,8 @@ ol li {
   div.post:first-child {
     margin-top: 0px;
   }
+
+  img.img-margin {
+    margin-left: 0;
+  }
 }
